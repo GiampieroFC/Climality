@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import IW from '../../models/response.class'
 import getInfoWeatherCity from '../../models/request.city'
-import InfoWeather from '../pures/infoWeather'
+import InfoWeather from '../pures/InfoWeather'
 import { Container, Row, Col, InputGroup, Form, Button, Stack, Modal } from 'react-bootstrap'
 import Waiting from '../pures/Waiting'
 import { Helmet } from "react-helmet";
