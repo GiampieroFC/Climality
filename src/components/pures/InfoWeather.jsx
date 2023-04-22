@@ -2,10 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import IW from '../../models/response.class'
 import { Card, ListGroup, ListGroupItem, Stack } from 'react-bootstrap'
+// import "../../styles.css";
+
 
 function InfoWeather({ props }) {
 
     return (
+
+
         <Card border="success">
             <Card.Header>{props.country}</Card.Header>
             <Card.Body>
@@ -26,7 +30,7 @@ function InfoWeather({ props }) {
                     {props.condition.text}
                 </Card.Text>
             </Card.Body>
-            <ListGroup flush>
+            <ListGroup variant='flush'>
                 <ListGroupItem>
                     <p className='text-center fw-bold'>
                         🤔 But feels like:
@@ -71,6 +75,8 @@ function InfoWeather({ props }) {
                 </ListGroupItem>
             </ListGroup>
         </Card>
+
+
     )
 }
 
